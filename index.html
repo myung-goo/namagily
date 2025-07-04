@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+  </head>
+  <body>
+    <div id="status-bar">
+        <!--큰 div 안에 작은 div가 자식으로 들어가 있다-->
+        <div class="status-bar__column">
+        <span>No Service</span>
+        <!--블록 요소와 인라인 요소의 차이 1. 블록 요소 (Block Element)
+         한 줄 전체를 차지합니다. (가로 폭을 전부 씀)
+         항상 새 줄에서 시작합니다.
+         내부에 다른 블록 요소나 인라인 요소를 가질 수 있습니다.
+         2. 인라인 요소 (Inline Element)
+         내용만큼의 공간만 차지합니다.
+         줄 바꿈이 발생하지 않고, 한 줄에 이어서 배치됩니다.
+         블록 요소를 내부에 넣을 수 없습니다. (다만 HTML5에서 일부 예외 허용)
+        !-->
+        <!-- To Do: Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+        <!-- Battery Icon -->
+        <!-- Lightning Icon -->
+      </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to kokoa clone</h1>
+        <p class="welcome-header__text">
+            IF you have a kokoa account,log in with your email od phone number.
+            </p>
+    </header>
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="password"/>
+        <input type="submit" value="log In"/>
+        <a href="#">find kokoa account or password</a>
+
+    <script src="https://kit.fontawesome.com/f610928603.js" crossorigin="anonymous"></script>
+  </body>
+</html>
